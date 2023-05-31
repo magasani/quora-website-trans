@@ -1,0 +1,22 @@
+{% extends "common.html" %}
+{% block title %}All QuestionsPage{% endblock %}
+
+{% block contant %}
+
+
+<form method="post">
+    
+    <label for="text">answer</label>
+    <input type="text" class="form-control" name ='answer' required id="answer" placeholder="text" >
+  </div>
+    
+    {% csrf_token %}
+    <input type="submit">
+</form>
+<li class="nav-item">
+    <a class="nav-link" href="{% url 'viewanswers' %}">like_question</a>
+  </li>
+
+
+
+{% endblock %}
