@@ -1,0 +1,14 @@
+{% extends "common.html" %}
+{% block title %}Add user{% endblock %}
+
+{% block contant %}
+    <div><h2>register_user </h2></div>
+    <br>
+    <form action="" method="post">
+    
+        {{form.as_p}}
+        
+        {% csrf_token %}
+        <input type="submit">
+    </form>
+{% endblock %}
